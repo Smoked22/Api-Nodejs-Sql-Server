@@ -1,0 +1,31 @@
+@api = http://localhost:3000/products
+GET {{api}}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "silla wena",
+    "description": "sera bueno esto",
+    "quantity": "90"
+}
+
+###
+GET {{api}}/15
+
+### Eliminando un producto
+DELETE {{api}}/12
+
+###Get Tital Products
+GET {{api}}/count
+
+###Update a product
+PUT {{api}}/15
+Content-Type: application/json
+
+{
+    "name": "Producto cambio de datos",
+    "description": "eqolecua",
+    "quantity": "50"
+}
